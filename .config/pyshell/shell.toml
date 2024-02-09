@@ -1,0 +1,22 @@
+# This file is used to define pyShell behavior.
+# Packages (Python modules) are loaded through here.
+# All paths are relative to the 'main.py' file.
+# Define a *unique* header name for each package as [pkgs.{name}].
+# 'file' should be set to the name of the package's file as is in the ./bin/ directory stripped of the file extension.
+# 'commands' should be set to all commands imported and avaible to the end user.
+# 'man' should be set to a directory containing the manual pages for the package or "DEFAULT".
+# The man page directory defaults to ./man/{name} with each command having a {command_name}.md file within the directory.
+# Non-default man page locations still need to follow the {dir}/{command_name}.md format.
+
+[pkgs.core]
+file = "commands"
+commands = ["ls", "cd", "cat", "clear", "cli_help"]
+man = "DEFAULT"
+[pkgs.pyfetch]
+file = "pyfetch"
+commands = ["pyfetch"]
+man = "DEFAULT"
+[pkgs.pyedit]
+file = "pyedit"
+commands = ["pyedit"]
+man = "DEFAULT"
