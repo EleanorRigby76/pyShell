@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pyShell"
+version = "0.1"
+description = "A Python-based program intended to 'emulate' the GNU Bash shell. This program gives you familiar commands such as 'cd', 'ls', and 'cat'. Instead of nano as you would find on many Linux systems, you have a custom 'pyedit' editor. A neofetch-esque program, 'pyfetch', is included. Any base Python command can be ran. Syntax for commands is command arg1 arg2 (so on and so forth). For instance to run sum(10, 5) you would run 'sum 10 5'. Piping of output as would be seen in Bash is currently not supported. This Replit has been made for a Spanish 2 project, and thus contains a 'conjugate' command which conjugates the 'JUVI' irregular preterite verbs."
+authors = ["Eleanor"]
+
+[tool.poetry.dependencies]
+python = ">=3.10.0,<3.11"
+numpy = "^1.26.3"
+toml = "^0.10.2"
+awsiot = "^0.1.3"
+
+[tool.pyright]
+# https://github.com/microsoft/pyright/blob/main/docs/configuration.md
+useLibraryCodeForTypes = true
+exclude = [".cache"]
+
+[tool.ruff]
+# https://beta.ruff.rs/docs/configuration/
+select = ['E', 'W', 'F', 'I', 'B', 'C4', 'ARG', 'SIM']
+ignore = ['W291', 'W292', 'W293']
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
